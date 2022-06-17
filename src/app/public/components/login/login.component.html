@@ -1,0 +1,32 @@
+<div class="container-login">
+  <div class="greeting-message">
+    <h1>Hello,</h1>
+    <h2>Welcome! :)</h2>
+  </div>
+  <form (submit)="initSesion($event)">
+
+    <div class="form-group my-2">
+      <input type="text" class="form-input-login" name="user" [(ngModel)]="user.email" id="email" placeholder="Usuario">
+    </div>
+    <div class="form-group mt-4">
+      <input type="password" class="form-input-login" id="password" name="password" [(ngModel)]="user.password"
+        placeholder="CONTRASEÑA">
+    </div>
+    <div class="container-button mt-4">
+
+      <button type="submit" class="btn-ingresar">INICIAR SESION</button>
+    </div>
+    <div class="container-forgot-password">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+    <div class="container-forgot-password">
+      <a href="#" routerLink="register">Crear cuenta</a>
+    </div>
+  </form>
+</div>
+<div class="circle1">
+
+</div>
+<div class="circle2">
+
+</div>

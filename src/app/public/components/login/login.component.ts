@@ -9,10 +9,11 @@ import { User } from 'src/app/core/models/user';
 export class LoginComponent implements OnInit {
   user:User=new User();
   constructor() { }
-
   ngOnInit() {}
-  initSesion(event:any){
-    event.preventDefault();
+  initSesion(){
     console.log(this.user);
+    if(this.user.password && this.user.email){
+
+    }
   }
 }

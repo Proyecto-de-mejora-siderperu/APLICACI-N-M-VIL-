@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { FormsPageRoutingModule } from './forms-routing.module';
 
 import { FormsPage } from './forms.page';
+import { DataTablesModule } from 'angular-datatables';
+import { CreateFormComponent } from './components/views/create-form/create-form.component';
+import { EditFormComponent } from './components/views/edit-form/edit-form.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FormsPageRoutingModule
+    FormsPageRoutingModule,
+    DataTablesModule
   ],
-  declarations: [FormsPage]
+  declarations: [FormsPage,CreateFormComponent,EditFormComponent]
 })
 export class FormsPageModule {}

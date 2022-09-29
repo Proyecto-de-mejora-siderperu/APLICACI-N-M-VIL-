@@ -1,0 +1,39 @@
+.container-cards-home {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: .5em;
+
+    & .i-card {
+        width: 160px;
+        background-color: #fff;
+        border-radius: 12px;
+        height: 170px;
+        margin-bottom: 10px;
+        padding-top: .4em;
+
+        & .icon {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            & ion-icon {
+                font-size: 80px;
+                color: var(--bg-app-custom);
+            }
+        }
+
+        & .ctitle {
+            font-size: .95em;
+            width: 100%;
+            font-weight: bold;
+            padding: .3em;
+            text-align: center;
+            color: var(--bg-app-custom);
+            text-transform: uppercase;
+        }
+    }
+
+}

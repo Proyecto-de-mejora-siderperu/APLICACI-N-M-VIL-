@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { PublicPageRoutingModule } from './public-routing.module';
 
 import { PublicPage } from './public.page';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 @NgModule({
   imports: [
@@ -15,6 +18,6 @@ import { PublicPage } from './public.page';
     IonicModule,
     PublicPageRoutingModule
   ],
-  declarations: [PublicPage]
+  declarations: [PublicPage, LoginComponent,RegisterComponent,ForgotPasswordComponent]
 })
 export class PublicPageModule {}

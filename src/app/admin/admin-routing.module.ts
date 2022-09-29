@@ -9,12 +9,8 @@ const routes: Routes = [
     component: AdminPage,
     children: [
       {
-        path: 'practicing',
-        loadChildren: () => import('./practicing/practicing.module').then(m => m.PracticingPageModule)
-      },
-      {
-        path: 'collaborators',
-        loadChildren: () => import('./collaborators/collaborators.module').then(m => m.CollaboratorsPageModule)
+        path: 'configuration',
+        loadChildren: () => import('./configuration/configuration.module').then(m => m.ConfigurationPageModule)
       },
       {
         path: 'forms',
@@ -27,15 +23,18 @@ const routes: Routes = [
       {
         path: 'evaluations',
         loadChildren: () => import('./evaluations/evaluations.module').then(m => m.EvaluationsPageModule)
-      }, {
-        path: '',
-        redirectTo: '/admin/home',
-      }, {
+      }, 
+      {
         path: 'home',
         loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
       },
+       {
+        path: '',
+        redirectTo: '/admin/home',
+      }, 
     ]
   },
+
 
 
 

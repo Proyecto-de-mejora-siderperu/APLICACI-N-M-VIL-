@@ -1,0 +1,21 @@
+ion-content{
+  
+    --background: var(--bg-app-custom);
+}
+.delete-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2em;
+    color: red;
+}
+.form-group{
+    position: relative;
+}
+.display-type-inputs{
+    position: relative;
+}
+.delete-item-answer{
+    color: red;
+    font-size: 1em;
+}

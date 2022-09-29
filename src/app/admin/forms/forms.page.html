@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>forms</ion-title>
+    <ion-title>Formularios</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+  <br><br><br>
+  <div class="container table-responsive row-border">
+    <table class="table datatable" datatable #tableforms [dtOptions]="dtOptions">
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>Nombre</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+       <tbody>
+       
+      </tbody>
+
+    </table>
+  </div>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed" routerLink="/admin/forms/create">
+    <ion-fab-button color="dark">
+      <ion-icon md="add"></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab>
+
 
 </ion-content>

@@ -14,12 +14,14 @@ export class UserService extends MasterService<User> {
     super(http, 'user');
   }
   public authentication(email: string, password: string): Observable<any> {
-    return this.http.post(this.url()+"/login", {
+    return this.http.post(this.url() + "/login", {
       email: email,
       password: password
     });
   }
-  public search(text: string):Observable<any>{
-    return this.http.post(this.url() + '/search' , {search: text});
- }
+  
+  public search(text: string): Observable<any> {
+    return this.http.post(this.url() + '/search', { search: text });
+  }
+  
 }

@@ -18,6 +18,15 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+
+  {
+    path: 'practicante',
+    loadChildren: () => import('./practicante/practicante.module').then( m => m.PracticantePageModule)
+  },
+  {
+    path: 'monitor',
+    loadChildren: () => import('./monitor/monitor.module').then( m => m.MonitorPageModule)
   }
 ];
 

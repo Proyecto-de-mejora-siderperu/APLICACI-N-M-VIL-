@@ -34,12 +34,14 @@
             "styles": [
               "src/theme/variables.scss",
               "src/global.scss",
-              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css",
+              "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.min.js",
-              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"
+              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js",
+              "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"
             ],
             "aot": false,
             "vendorChunk": true,
